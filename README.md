@@ -1,6 +1,6 @@
 # CSS Shorthand Properties
 
-A simple way to list all "shorthand" CSS properties and which properties they expand to, as defined on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
+A simple way to list all shorthand CSS properties and which properties they expand to, as defined on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
 I tried to search for an existing simple list but couldn't find one, so I trawled through MDN and collated the data.
 
