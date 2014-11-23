@@ -1,8 +1,10 @@
 # CSS Shorthand Properties
 
-A simple way to list all shorthand CSS properties and which properties they expand to, as defined on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
+A simple way to list all [shorthand](http://www.w3.org/TR/CSS2/about.html#shorthand) CSS properties and which properties they expand to.
 
-I tried to search for an existing simple list but couldn't find one, so I trawled through MDN and collated the data.
+I tried to search for an existing simple list but couldn't find one, so I trawled through the various [W3C CSS specs](http://www.w3.org/Style/CSS/current-work) and collated the data.
+
+Only specs that are Candidate Recommendations or better are counted, with the exception of some Working Drafts that have a lot of traction in browser implementations. So far the WD specs included here are Animation, Transitions and Flexbox.
 
 ## Usage
 
