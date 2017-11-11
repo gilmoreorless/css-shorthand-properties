@@ -1,24 +1,24 @@
 /*!
  * https://github.com/gilmoreorless/css-shorthand-properties
- * MIT Licensed: http://gilmoreorless.mit-license.org/
+ * MIT Licensed: https://gilmoreorless.mit-license.org/
  */
 (function (exports) {
     /**
-     * Data collated from multiple W3C specs: http://www.w3.org/Style/CSS/current-work
+     * Data collated from multiple W3C specs: https://www.w3.org/Style/CSS/current-work
      * Only specs that are Candidate Recommendations or better are counted, with the
      * exception of some Working Drafts that have a lot of traction in browser implementations.
-     * So far the WD specs included here are Animation, Transitions and Flexbox.
+     * So far the WD specs included here are Animation and Transitions.
      *
      * @type {Object}
      */
     var props = exports.shorthandProperties = {
-        // CSS 2.1: http://www.w3.org/TR/CSS2/propidx.html
+        // CSS 2.1: https://www.w3.org/TR/CSS2/propidx.html
         'list-style':      ['-type', '-position', '-image'],
         'margin':          ['-top', '-right', '-bottom', '-left'],
         'outline':         ['-width', '-style', '-color'],
         'padding':         ['-top', '-right', '-bottom', '-left'],
 
-        // CSS Backgrounds and Borders Module Level 3: http://www.w3.org/TR/css3-background/
+        // CSS Backgrounds and Borders Module Level 3: https://www.w3.org/TR/css3-background/
         'background':      ['-image', '-position', '-size', '-repeat', '-origin', '-clip', '-attachment', '-color'],
         'border':          ['-width', '-style', '-color'],
         'border-color':    ['border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color'],
@@ -31,35 +31,52 @@
         'border-radius':   ['border-top-left-radius', 'border-top-right-radius', 'border-bottom-right-radius', 'border-bottom-left-radius'],
         'border-image':    ['-source', '-slice', '-width', '-outset', '-repeat'],
 
-        // CSS Fonts Module Level 3: http://www.w3.org/TR/css3-fonts/
+        // CSS Fonts Module Level 3: https://www.w3.org/TR/css3-fonts/
         'font':            ['-style', '-variant', '-weight', '-stretch', '-size', 'line-height', '-family'],
         'font-variant':    ['-ligatures', '-alternates', '-caps', '-numeric', '-east-asian'],
 
-        // CSS Masking Module Level 1: http://www.w3.org/TR/css-masking/
+        // CSS Flexible Box Layout Module Level 1: https://www.w3.org/TR/css3-flexbox-1/
+        'flex':            ['-grow', '-shrink', '-basis'],
+        'flex-flow':       ['flex-direction', 'flex-wrap'],
+
+        // CSS Grid Layout Module Level 1: https://www.w3.org/TR/css-grid-1/
+        'grid':            ['-template-rows', '-template-columns', '-template-areas', '-auto-rows', '-auto-columns', '-auto-flow'],
+        'grid-template':   ['-rows', '-columns', '-areas'],
+        'grid-row':        ['-start', '-end'],
+        'grid-column':     ['-start', '-end'],
+        'grid-area':       ['grid-row-start', 'grid-column-start', 'grid-row-end', 'grid-column-end'],
+        'grid-gap':        ['grid-row-gap', 'grid-column-gap'],
+
+        // CSS Masking Module Level 1: https://www.w3.org/TR/css-masking/
         'mask':            ['-image', '-mode', '-position', '-size', '-repeat', '-origin', '-clip'],
         'mask-border':     ['-source', '-slice', '-width', '-outset', '-repeat', '-mode'],
 
-        // CSS Multi-column Layout Module: http://www.w3.org/TR/css3-multicol/
+        // CSS Multi-column Layout Module: https://www.w3.org/TR/css3-multicol/
         'columns':         ['column-width', 'column-count'],
         'column-rule':     ['-width', '-style', '-color'],
 
-        // CSS Speech Module: http://www.w3.org/TR/css3-speech/
+        // CSS Scroll Snap Module Level 1: https://www.w3.org/TR/css-scroll-snap-1/
+        'scroll-padding':            ['-top', '-right', '-bottom', '-left'],
+        'scroll-padding-block':      ['-start', '-end'],
+        'scroll-padding-inline':     ['-start', '-end'],
+        'scroll-snap-margin':        ['-top', '-right', '-bottom', '-left'],
+        'scroll-snap-margin-block':  ['-start', '-end'],
+        'scroll-snap-margin-inline': ['-start', '-end'],
+
+        // CSS Speech Module: https://www.w3.org/TR/css3-speech/
         'cue':             ['-before', '-after'],
         'pause':           ['-before', '-after'],
         'rest':            ['-before', '-after'],
 
-        // CSS Text Decoration Module Level 3: http://www.w3.org/TR/css-text-decor-3/
+        // CSS Text Decoration Module Level 3: https://www.w3.org/TR/css-text-decor-3/
         'text-decoration': ['-line', '-style', '-color'],
         'text-emphasis':   ['-style', '-color'],
 
-        // CSS Animations (WD): http://www.w3.org/TR/css3-animations
+        // CSS Animations (WD): https://www.w3.org/TR/css3-animations
         'animation':       ['-name', '-duration', '-timing-function', '-delay', '-iteration-count', '-direction', '-fill-mode', '-play-state'],
 
-        // CSS Transitions (WD): http://www.w3.org/TR/css3-transitions/
+        // CSS Transitions (WD): https://www.w3.org/TR/css3-transitions/
         'transition':      ['-property', '-duration', '-timing-function', '-delay'],
-
-        // CSS Flexible Box Layout Module Level 1 (WD): http://www.w3.org/TR/css3-flexbox/
-        'flex':            ['-grow', '-shrink', '-basis']
     };
 
     /**
