@@ -80,6 +80,15 @@
     };
 
     /**
+     * Check if a CSS property is a shorthand value
+     * @param  {string} property CSS property name
+     * @return {boolean} True if the property is a shorthand value
+     */
+    exports.isShorthand = function (property) {
+        return props.hasOwnProperty(property);
+    };
+
+    /**
      * Expand a shorthand property into an array of longhand properties
      * @param  {string} property CSS property name
      * @param  {boolean} recurse Expand sub-properties, when applicable - default false

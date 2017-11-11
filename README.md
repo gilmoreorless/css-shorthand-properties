@@ -21,12 +21,24 @@ There is a convenience method (listed below) that means you shouldn’t need to 
 
 ### Methods
 
+#### isShorthand
+
+* Returns a boolean indicating if a CSS property is a shorthand.
+* **Parameters**:
+    * `property` _(String)_ Shorthand property to expand.
+* **Returns**: _Boolean_
+
+```js
+cssShorthandProps.isShorthand('border');  // true
+cssShorthandProps.isShorthand('display');  // false
+```
+
 #### expand
 
-* Takes a CSS shorthand property and returns a list of longhand properties
+* Takes a CSS shorthand property and returns a list of longhand properties.
 * **Parameters**:
-	* `property` _(String)_ Shorthand property to expand.
-	* `recurse` _(Boolean – optional, default `false`)_ If true, each longhand property will also be run through `expand()`. This is only useful for the `border` property.
+    * `property` _(String)_ Shorthand property to expand.
+    * `recurse` _(Boolean – optional, default `false`)_ If true, each longhand property will also be run through `expand()`. This is only useful for the `border` property.
 * **Returns**: _Array_ with a list of longhand properties that the given property expands to. If the property is not a shorthand, the array contains only the original property.
 
 ```js
