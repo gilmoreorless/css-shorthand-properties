@@ -79,7 +79,7 @@
         'transition':      ['-property', '-duration', '-timing-function', '-delay'],
         
         // CSS Overflow: https://www.w3.org/TR/css-overflow-3/
-        'transition':      ['-x', '-y'],
+        'overflow':        ['-x', '-y'],
     };
 
     /**
