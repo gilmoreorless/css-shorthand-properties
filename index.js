@@ -19,17 +19,18 @@
         'padding':         ['-top', '-right', '-bottom', '-left'],
 
         // CSS Backgrounds and Borders Module Level 3: https://www.w3.org/TR/css3-background/
-        'background':      ['-image', '-position', '-size', '-repeat', '-origin', '-clip', '-attachment', '-color'],
-        'border':          ['-width', '-style', '-color'],
-        'border-color':    ['border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color'],
-        'border-style':    ['border-top-style', 'border-right-style', 'border-bottom-style', 'border-left-style'],
-        'border-width':    ['border-top-width', 'border-right-width', 'border-bottom-width', 'border-left-width'],
-        'border-top':      ['-width', '-style', '-color'],
-        'border-right':    ['-width', '-style', '-color'],
-        'border-bottom':   ['-width', '-style', '-color'],
-        'border-left':     ['-width', '-style', '-color'],
-        'border-radius':   ['border-top-left-radius', 'border-top-right-radius', 'border-bottom-right-radius', 'border-bottom-left-radius'],
-        'border-image':    ['-source', '-slice', '-width', '-outset', '-repeat'],
+        'background':           ['-image', '-position', '-size', '-repeat', '-origin', '-clip', '-attachment', '-color'],
+        'background-position':  ['-x', '-y'],  // Not found in the spec, but already implemented by every stable browser
+        'border':               ['-width', '-style', '-color'],
+        'border-color':         ['border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color'],
+        'border-style':         ['border-top-style', 'border-right-style', 'border-bottom-style', 'border-left-style'],
+        'border-width':         ['border-top-width', 'border-right-width', 'border-bottom-width', 'border-left-width'],
+        'border-top':           ['-width', '-style', '-color'],
+        'border-right':         ['-width', '-style', '-color'],
+        'border-bottom':        ['-width', '-style', '-color'],
+        'border-left':          ['-width', '-style', '-color'],
+        'border-radius':        ['border-top-left-radius', 'border-top-right-radius', 'border-bottom-right-radius', 'border-bottom-left-radius'],
+        'border-image':         ['-source', '-slice', '-width', '-outset', '-repeat'],
 
         // CSS Fonts Module Level 3: https://www.w3.org/TR/css3-fonts/
         'font':            ['-style', '-variant', '-weight', '-stretch', '-size', 'line-height', '-family'],
