@@ -71,5 +71,5 @@ cssShorthandProps.expand('border', true);
 
 ## Licence
 
-MIT: [https://gilmoreorless.mit-license.org/]()
+[MIT](LICENSE)
 
