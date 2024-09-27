@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file (the format is based on [Keep a Changelog](http://keepachangelog.com/)).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.2 - 2024-09-27
+### Fixed
+- Updated license field in `package.json` to remove deprecated syntax. (#7)
+
 ## 1.1.1 - 2018-07-17
 ### Fixed
 - Added missing `background-position` shorthand. (#5)
