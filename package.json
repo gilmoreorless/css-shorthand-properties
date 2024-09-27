@@ -15,10 +15,5 @@
     "url": "git://github.com/gilmoreorless/css-shorthand-properties.git"
   },
   "main": "index.js",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://gilmoreorless.mit-license.org/"
-    }
-  ]
+  "license": "MIT"
 }
